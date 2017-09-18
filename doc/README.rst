@@ -18,7 +18,7 @@ Install the latest version of **Python 3** at https://www.python.org/ . After th
 
  > pip install passme
 
-You can check the latest version by **pip search passme** and update to the latest version by **pip install -U passme**.
+You can check the `latest version <https://pypi.python.org/pypi/passme>`_ by **pip search passme** and update to the latest version by **pip install -U passme**.
  
 Preparation of sitekey file
 ---------------
