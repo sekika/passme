@@ -25,4 +25,4 @@ Full document
 
 See full document at:
 
-https://github.com/sekika/passme/blob/master/passme/doc/README.rst
+https://github.com/sekika/passme/blob/master/doc/README.rst

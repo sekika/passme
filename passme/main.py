@@ -9,7 +9,7 @@ def main(argv=sys.argv[1:]):
 
     # Hard-coded configuration
     ConfFile = os.path.expanduser('~/.passme')
-    Document = 'https://github.com/sekika/passme/blob/master/passme/doc/README.rst'
+    Document = 'https://github.com/sekika/passme/blob/master/doc/README.rst'
     hashes = ('sha384', 'sha512', 'sha3_384', 'sha3_512')
     chars = ('a','n','an','ans','ans95')
 
