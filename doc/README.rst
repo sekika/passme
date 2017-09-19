@@ -7,7 +7,7 @@ Passme: Password management with command line
 
 The master password is not site specific, and therefore you have to remember only one master password. **Do not forget your master password or lose your sitekey file**, because once you lose one of them you will lose all the passwords and you can never recover them (otherwise it is not secure). The sitekey file could be managed with your private git repository.
 
-Refer to `seurity <security.rst>`_ for more information on security.
+Refer to `security <security.rst>`_ for more information on security.
 
 Install
 ---------------
