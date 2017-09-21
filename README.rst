@@ -26,3 +26,7 @@ Full document
 See full document at:
 
 https://github.com/sekika/passme/blob/master/doc/README.rst
+
+Tutorial movie at:
+
+https://youtu.be/6DXPhyYhYsE

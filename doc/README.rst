@@ -84,6 +84,11 @@ More information
 * `Multiple accounts <multiaccount.rst>`_ at the same site
 * `Seurity <security.rst>`_
 
+Tutorial movie
+---------------
+
+https://youtu.be/6DXPhyYhYsE
+
 Author
 ---------------
 
