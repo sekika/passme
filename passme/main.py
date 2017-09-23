@@ -20,7 +20,7 @@ def main(argv=sys.argv[1:]):
     CopyPass = True
     VCS = ''
     SeedLen = 30
-    DefaultHash = 'sha3_384'
+    DefaultHash = 'sha384'
     DefaultChar = 'an'
     DefaultLen = 14
 
@@ -145,12 +145,12 @@ def main(argv=sys.argv[1:]):
             if p.isdigit(): plen=int(p)
             if plen > 0: break
         config['DefaultLen'] = plen
-        h = hashlib.sha3_512()
+        h = hashlib.sha512()
 #        h.update(secrets.token_bytes(128)) # secrets module is supported from Python 3.6
         h.update(os.urandom(128))
         for key in sitekey.keys():
             h.update(sitekey[key]['seed'].encode('utf-8'))
-        seed = genpass(h.digest(), 'sha3_512', 'ans', int(SeedLen))
+        seed = genpass(h.digest(), 'sha512', 'ans', int(SeedLen))
         comment = ''
         while True:
             c = input('Comment (no input to finish): ')
