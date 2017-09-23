@@ -1,5 +1,6 @@
 import sys, os, re, getpass, warnings, copy
-import hashlib, secrets
+import hashlib
+# import secrets
 from configobj import ConfigObj
 import clipboard
 from .calc import genpass
@@ -145,7 +146,8 @@ def main(argv=sys.argv[1:]):
             if plen > 0: break
         config['DefaultLen'] = plen
         h = hashlib.sha3_512()
-        h.update(secrets.token_bytes(128))
+#        h.update(secrets.token_bytes(128)) # secrets module is supported from Python 3.6
+        h.update(os.urandom(128))
         for key in sitekey.keys():
             h.update(sitekey[key]['seed'].encode('utf-8'))
         seed = genpass(h.digest(), 'sha3_512', 'ans', int(SeedLen))
