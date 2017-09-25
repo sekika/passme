@@ -12,7 +12,9 @@ where
 * site: site name
 * master: master password
 
-when the master password is not given at the command line argument, it is prompted. The comment of the sitekey is shown first and after you provide the master password, the generated password is shown and copied to the clipboard. See the example as follows.
+When the master password is not given at the command line argument, it is prompted. If you enter the master password from the command line, it may be stored in a file which stores your command history such as .bash_history.
+
+The comment of the sitekey is shown first and after you provide the master password, the generated password is shown and copied to the clipboard. See the example as follows.
 
 .. code-block::
 
