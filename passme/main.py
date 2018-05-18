@@ -1,9 +1,6 @@
 import sys
 import os
-import re
 import getpass
-import warnings
-import copy
 import hashlib
 # import secrets
 from configobj import ConfigObj
@@ -45,7 +42,7 @@ def main(argv=sys.argv[1:]):
                 f.write('# -*- coding: utf-8 -*-\n# Passme sitekey file\n\n')
                 f.close()
                 print('Sitekey file is initialized. Initialization finished.')
-            except:
+            except Exception:
                 print('Error: cannot create sitekey file: {0}'.format(
                     SiteKeyFile))
                 sys.exit()
@@ -58,7 +55,7 @@ def main(argv=sys.argv[1:]):
             f = open(SiteKeyFile, 'w')
             f.write('# -*- coding: utf-8 -*-\n# Passme sitekey file\n\n')
             f.close()
-        except:
+        except Exception:
             print('Error: cannot create sitekey file: {0}'.format(SiteKeyFile))
             print('Check the filename in {0}'.format(ConfFile))
             sys.exit()
@@ -209,7 +206,7 @@ def main(argv=sys.argv[1:]):
         file = input('Output filename: ')
         try:
             f = open(file, 'w')
-        except:
+        except Exception:
             print('Error: cannot create file: {0}'.format(file))
             sys.exit()
         while True:

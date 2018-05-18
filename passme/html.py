@@ -94,20 +94,20 @@ try {
     var hash = site[0];
     var char = site[1];
     var plen = site[2];
-    var seed = site[3];    
+    var seed = site[3];
 
     if (site.length > 4) {
         SiteInfo = SiteInfo + "<ul>";
         for (var i = 4; i < site.length; i++) {
-            var SiteInfo = SiteInfo + "<li>" + site[i].replace(/((http:|https:)\/\/[\x21-\x26\x28-\x7e]+)/gi, "<a href='$1'>$1</a>") + "</li>";            
+            var SiteInfo = SiteInfo + "<li>" + site[i].replace(/((http:|https:)\/\/[\x21-\x26\x28-\x7e]+)/gi, "<a href='$1'>$1</a>") + "</li>";
         }
         SiteInfo = SiteInfo + "</ul>"
     }
-    
+
     hash = hash.replace("sha3_","SHA3-").replace("sha","SHA-"); <!-- convert from Python hashlib -->
     var Password = document.getElementById("Result");
     var SiteInfoOutput = document.getElementById("SiteInfo");
-    
+
     var hashObj = new jsSHA(hash, "BYTES");
     hashObj.update(master.value + seed);
 
