@@ -134,7 +134,7 @@ def main(argv=sys.argv[1:]):
     if site == 'add':
         while True:
             site = input('Site name: ')
-            if site in ('add', 'list', 'edit', 'html', 'ALL'):
+            if site in ('add', 'list', 'edit', 'html', 'test', 'ALL'):
                 print('{0} is reserved.'.format(site))
                 site = ''
             if site == '':
