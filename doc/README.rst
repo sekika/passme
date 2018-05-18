@@ -61,7 +61,8 @@ where
 * site: site name
 * master: master password
 
-when the master password is not given at the command line argument, it is prompted.
+When the master password is not given at the command line argument, it is prompted.
+If you enter the master password from the command line, it may be stored in a file which stores your command history such as .bash_history.
 
 Refer to `Generate password <genpass.rst>`_ for more information.
 

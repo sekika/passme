@@ -12,7 +12,9 @@ where
 * site: site name
 * master: master password
 
-when the master password is not given at the command line argument, it is prompted. The comment of the sitekey is shown first and after you provide the master password, the generated password is shown and copied to the clipboard. See the example as follows.
+When the master password is not given at the command line argument, it is prompted. If you enter the master password from the command line, it may be stored in a file which stores your command history such as .bash_history.
+
+The comment of the sitekey is shown first and after you provide the master password, the generated password is shown and copied to the clipboard. See the example as follows.
 
 .. code-block::
 
@@ -22,6 +24,8 @@ when the master password is not given at the command line argument, it is prompt
  https://google.com/
  OT9BD5h6cHmWlN
  Password copied to clipboard.
+ 
+Now you can always get your password when you have the same sitekey and master password. You can change the password of the site to this password. **Do not mistype the master password when you set your password to the site.** If you do, it is very hard to recover your password. It is recommended to show your master password by setting "ShowMasterPass = True" in `.passme <config.rst>`_ file, or generating password several times to confirm that same password is produced.
 
 When the site name is not found in sitekey, the provided site name is searched in comments. If found, they are shown as suggested site name. Therefore it is recommended to provide keywords of the site in the comment so that the site name can easily be recalled when you forget it.
 
