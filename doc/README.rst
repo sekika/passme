@@ -19,7 +19,9 @@ Install the latest version of **Python 3** at https://www.python.org/ . This pro
  > pip3 install passme
 
 You can check the `latest version <https://pypi.python.org/pypi/passme>`_ by **pip3 search passme** and update to the latest version by **pip3 install -U passme**.
- 
+
+You can check if it is properly installed by
+
 Preparation of sitekey file
 ---------------
 
@@ -74,6 +76,16 @@ List of the site names in sitekey file is shown by
 .. code-block:: bash
 
  > passme list
+
+Test calculation
+---------------
+
+Calculation routine is tested by the following command. All the available hash algorithms and character types are compared with expected results. This is to make sure that this program works similar on different enviroment.
+
+.. code-block::
+
+ > passme test
+ Test completed without error.
 
 More information
 ---------------

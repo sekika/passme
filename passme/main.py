@@ -6,6 +6,7 @@ import hashlib
 from configobj import ConfigObj
 import clipboard
 from .calc import genpass
+from .calc import testcalc
 from .html import genhtml
 
 
@@ -239,19 +240,7 @@ def main(argv=sys.argv[1:]):
 
     # Test command
     if site == 'test':
-        for key in [
-            ['key', 'sha384', 'an', 10, 'G3RaDVADAu'],
-            ['日本語', 'sha512', 'ans', 14, 'c9bJ_LZrJc0[vV'],
-            ['BfY1Qf1h2Y,loQKKgc', 'sha3_384', 'base64', 12, 'QvOK53SPiqxy'],
-            ['e\4!$P7}V3^YG^Wn~', 'sha3_512', 'a', 15, 'TdWBpQAjBBbwpgk'],
-            ['Y#rzp4FTnXEJCH6|)q', 'sha384', 'n', 14, '22974221358045'],
-            ['y#h$2qaS?$/h&oaq"hh', 'sha512', 'ans95', 18, 'm9?2P0&vdj\mg$H"X&'],
-        ]:
-            password = genpass(key[0].encode('utf-8'), key[1], key[2], int(key[3]))
-            assert password == key[4], 'Unexpected password produced.\n' \
-                'hash = ' + key[1] + '\nchar = ' + key[2] + '\nlen = ' + str(key[3]) + '\nseed = ' + key[0] \
-                + '\nExpected password = ' + key[4] + '\nCalculated password = ' + password
-        print('Test completed without error.')
+        testcalc()
         sys.exit()
 
     # Site not defined
