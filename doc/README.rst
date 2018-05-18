@@ -80,7 +80,7 @@ List of the site names in sitekey file is shown by
 Test calculation
 ---------------
 
-Calculation routine is tested by the following command. All the available hash algorithms and character types are compared with expected results. This is to make sure that this program works similar on different enviroment.
+Calculation routine is tested by the following command. All the available hash algorithms and character types are compared with expected results. This is to make sure that this program works similar on different environment.
 
 .. code-block:: bash
 
