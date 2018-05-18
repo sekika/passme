@@ -12,7 +12,7 @@ Refer to `security <security.rst>`_ for more information on security.
 Install
 ---------------
 
-Install the latest version of **Python 3** at https://www.python.org/ . After that, install passme by running
+Install the latest version of **Python 3** at https://www.python.org/ . This program requires Python 3.4 or higher. After that, install passme by running
 
 .. code-block:: bash
 
