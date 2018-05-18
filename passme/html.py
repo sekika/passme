@@ -1,6 +1,6 @@
 def genhtml(sites):
 
-##############################################
+    ##############################################
     html = r'''<!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -48,7 +48,8 @@ try {
 
 ######################################################
 
-    html = html + ('site = "{0}" <!-- Default selection -->'.format(sites[0][0]))
+    html = html + \
+        ('site = "{0}" <!-- Default selection -->'.format(sites[0][0]))
 
     html = html + '''
 
@@ -56,7 +57,8 @@ try {
 
 '''
     for i in sites:
-        site = i[0]; key = [i[1]['hash'], i[1]['char'], int(i[1]['len']), i[1]['seed']]
+        site = i[0]
+        key = [i[1]['hash'], i[1]['char'], int(i[1]['len']), i[1]['seed']]
         for c in i[1]['comment'].split('\n'):
             key.append(c)
         html = html + ('        "{0}" : {1},\n'.format(site, key))
