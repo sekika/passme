@@ -82,7 +82,7 @@ Test calculation
 
 Calculation routine is tested by the following command. All the available hash algorithms and character types are compared with expected results. This is to make sure that this program works similar on different enviroment.
 
-.. code-block::
+.. code-block:: bash
 
  > passme test
  Test completed without error.
