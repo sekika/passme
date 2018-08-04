@@ -12,23 +12,7 @@ Refer to `security <security.rst>`_ for more information on security.
 Install
 ---------------
 
-Install the latest version of **Python 3** at https://www.python.org/ . This program requires Python 3.4 or higher. After that, install passme by running
-
-.. code-block:: bash
-
- > pip3 install passme
-
-Check the `latest version <https://pypi.python.org/pypi/passme>`_ and installed version by
-
-.. code-block:: bash
-
- > pip3 search passme
-
-Upgrade to the latest version by
-
-.. code-block:: bash
-
- > pip3 install -U passme
+See `install <install.rst>`_
 
 Preparation of sitekey file
 ---------------
