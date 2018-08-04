@@ -11,14 +11,14 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(
     name='passme',
-    version='0.1.6',
+    version='1.0.0',
     description='Password management with command line',
     long_description=long_description,
     url='https://github.com/sekika/passme',
     author='Katsutoshi Seki',
     license='MIT',
     classifiers=[
-        'Development Status :: 4 - Beta',
+        'Development Status :: 5 - Production/Stable',
         'Intended Audience :: End Users/Desktop',
         'Topic :: Security',
         'Topic :: Security :: Cryptography',
