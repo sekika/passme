@@ -1,5 +1,5 @@
 Passme: Password management with command line
-=======================
+=============================================
 
 Passme is a password management tool with command line or web browzer. It helps you generate strong passwords for many sites. It generates password every time from a site-specific seed (sitekey) stored in the configuration file (sitekey file) and a master password that you memorize and type every time.
 
