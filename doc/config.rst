@@ -3,6 +3,8 @@ Configuration
 
 In **.passme** file at your home directory you can set some configurations.
 
+From version 1.1.0, if **.passme** file exists in the current directory, configuration is read from the current directory.
+
 ============== ============= ========
 Variable       Default value Available values
 ============== ============= ========

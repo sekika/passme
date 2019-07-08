@@ -11,7 +11,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(
     name='passme',
-    version='1.0.1',
+    version='1.1.0',
     description='Password management with command line',
     long_description=long_description,
     url='https://github.com/sekika/passme',

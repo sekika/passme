@@ -13,10 +13,15 @@ from .html import genhtml
 def main(argv=sys.argv[1:]):
 
     # Hard-coded configuration
-    ConfFile = os.path.expanduser('~/.passme')
     Document = 'https://github.com/sekika/passme/blob/master/doc/README.rst'
     hashes = ('sha384', 'sha512', 'sha3_384', 'sha3_512')
     chars = ('a', 'n', 'an', 'ans', 'ans95')
+
+    # Check if confiuration file exists in current directory
+    if os.path.exists('.passme'):
+        ConfFile = '.passme'
+    else:
+        ConfFile = os.path.expanduser('~/.passme')
 
     # Default values of configuration in ConfFile
     ShowMasterPass = False
