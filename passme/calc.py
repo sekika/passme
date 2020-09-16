@@ -1,7 +1,9 @@
 import hashlib
 import base64
+import os
 import sys
 import re
+from configobj import ConfigObj
 
 
 def genpass(seed, has, char, plen):
@@ -68,3 +70,20 @@ def testcalc():
             key[4] + '\nCalculated password = ' + password
     print('Test completed without error.')
     return
+
+
+def readpass(site, master):
+    if os.path.exists('.passme'):
+        ConfFile = '.passme'
+    else:
+        ConfFile = os.path.expanduser('~/.passme')
+    SiteKeyFile = ConfigObj(os.path.expanduser(ConfFile))['SiteKeyFile']
+    if not os.path.exists(SiteKeyFile):
+        return 'Error: ' + SiteKeyFile + ' not found.'
+    sitekey = ConfigObj(SiteKeyFile, encoding='utf-8')
+    if site not in sitekey:
+        return site + ' not registered in passme.'
+    s = sitekey[site]
+    seed = (master + s['seed']).encode('utf-8')
+    password = genpass(seed, s['hash'], s['char'], int(s['len']))
+    return password
