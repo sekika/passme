@@ -69,6 +69,19 @@ List of the site names in sitekey file is shown by
 
  > passme list
 
+Use functions from Python (from version 1.2.0)
+---------------
+
+import passme and you can use 2 functions, readpass and genpass as follows.
+
+* passme.readpass(site, master)
+
+where site is the site name and master is the master password.
+
+* passme.genpass(seed, hash, char, len)
+
+where seed, hash, char, len is explained in the algorithm section of `security <security.rst>`_.
+
 Test calculation
 ---------------
 

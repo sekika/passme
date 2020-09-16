@@ -20,6 +20,16 @@ Basic usage
  OT9BD5h6cHmWlN
  Password copied to clipboard.
 
+Using in Python program
+---------------
+
+.. code-block::
+
+ import passme
+ master = input('Input master password: ')
+ password = passme.readpass('google', master)
+ print('Google password: ' + password)
+
 Full document
 ---------------
 
