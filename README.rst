@@ -21,7 +21,7 @@ Basic usage
  Password copied to clipboard.
 
 Using in Python program
----------------
+------------------------
 
 .. code-block::
 
