@@ -175,8 +175,7 @@ def main(argv=sys.argv[1:]):
                 break
         config['DefaultLen'] = plen
         h = hashlib.sha512()
-#        h.update(secrets.token_bytes(128)) # secrets module is supported from Python 3.6
-        h.update(os.urandom(128))
+        h.update(secrets.token_bytes(128)) # secrets module is supported from Python 3.6
         for key in sitekey.keys():
             h.update(sitekey[key]['seed'].encode('utf-8'))
         seed = genpass(h.digest(), 'sha512', 'ans', int(SeedLen))
