@@ -2,9 +2,10 @@ import sys
 import os
 import getpass
 import hashlib
-# import secrets
+import secrets
 from configobj import ConfigObj
 import clipboard
+import pkg_resources
 from .calc import genpass
 from .calc import testcalc
 from .html import genhtml
@@ -108,8 +109,9 @@ def main(argv=sys.argv[1:]):
 
     # Read commandline argument
     if (len(sys.argv)) == 1:
-        print('Usage:\npassme site [master]\npassme add\npassme list\npassme edit\npassme html\n\nFull document at\n{0}'.format(
-            Document))
+        version = pkg_resources.get_distribution('passme').version
+        print(
+            f'passme {version} - Password management\n\nUsage:\npassme site [master]\npassme add\npassme list\npassme edit\npassme html\n\nFull document at\n{Document}')
         sys.exit()
     else:
         site = sys.argv[1]
@@ -141,12 +143,12 @@ def main(argv=sys.argv[1:]):
         while True:
             site = input('Site name: ')
             if site in ('add', 'list', 'edit', 'html', 'test', 'ALL'):
-                print('{0} is reserved.'.format(site))
+                print(f'{site} is reserved.')
                 site = ''
             if site == '':
                 sys.exit()
             if site in sitekey:
-                print('{0} is already defined.'.format(site))
+                print(f'{site} is already defined.')
                 confirm = input(
                     'Are you sure to overwrite? If yes, type SURE: ')
                 if not confirm == 'SURE':
@@ -175,7 +177,8 @@ def main(argv=sys.argv[1:]):
                 break
         config['DefaultLen'] = plen
         h = hashlib.sha512()
-        h.update(secrets.token_bytes(128)) # secrets module is supported from Python 3.6
+        # secrets module is supported from Python 3.6
+        h.update(secrets.token_bytes(128))
         for key in sitekey.keys():
             h.update(sitekey[key]['seed'].encode('utf-8'))
         seed = genpass(h.digest(), 'sha512', 'ans', int(SeedLen))
@@ -195,11 +198,11 @@ def main(argv=sys.argv[1:]):
         print(comment)
         sitekey.write()
         config.write()
-        print('New sitekey for {0} was written in {1} as\nhash = {2}, char = {3}, len = {4}, seed = {5}\n{6}'.format(
-            site, SiteKeyFile, has, char, plen, seed, comment))
+        print(
+            'New sitekey for {site} was written in {SiteKeyFile} as\nhash = {has}, char = {char}, len = {plen}, seed = {seed}\n{comment}')
         if VCS == 'git':
             print(os.path.basename(SiteKeyFile))
-            os.system('cd '+os.path.abspath(os.path.dirname(SiteKeyFile))+'; git add '+os.path.basename(
+            os.system('cd ' + os.path.abspath(os.path.dirname(SiteKeyFile)) + '; git add ' + os.path.basename(
                 SiteKeyFile) + '; git commit -m "Changed by passme add command"; git push; git log -p -1')
         sys.exit()
 
@@ -254,7 +257,8 @@ def main(argv=sys.argv[1:]):
         print('Site {0} is not defined.'.format(site))
         for s in sitekey:
             if 'comment' in sitekey[s]:
-                if sitekey[s]['comment'].encode('utf-8').find(site.encode('utf-8')) > -1:
+                if sitekey[s]['comment'].encode(
+                        'utf-8').find(site.encode('utf-8')) > -1:
                     print('[ Suggestion: {0} ]\n{1}'.format(
                         s, sitekey[s]['comment']))
         sys.exit()
