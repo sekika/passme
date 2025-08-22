@@ -13,7 +13,7 @@ Password for a specific site is generated from information in the `sitekey file 
 * It is converted to the string with the characters specified by **char**.
 * The string is shortened to the character length specified by **len**.
 
-The calulation routine genpass(seed, hash, char, len) is in `calc.py <../passme/calc.py>`_ and you can confirm the algorithm by reading the source code. Note that the first argument in genpass function is the master password and site-specific seed concatinated.
+The calulation routine genpass(seed, hash, char, len) is in `calc.py <../src/passme/calc.py>`_ and you can confirm the algorithm by reading the source code. Note that the first argument in genpass function is the master password and site-specific seed concatinated.
 
 Attacking
 ---------------
