@@ -5,7 +5,7 @@ import hashlib
 import secrets
 from configobj import ConfigObj
 import clipboard
-import pkg_resources
+from importlib.metadata import version, PackageNotFoundError
 from .calc import genpass
 from .calc import testcalc
 from .html import genhtml
@@ -109,9 +109,19 @@ def main(argv=sys.argv[1:]):
 
     # Read commandline argument
     if (len(sys.argv)) == 1:
-        version = pkg_resources.get_distribution('passme').version
+        try:
+            pkg_version = version('passme')
+        except PackageNotFoundError:
+            pkg_version = 'unknown'
         print(
-            f'passme {version} - Password management\n\nUsage:\npassme site [master]\npassme add\npassme list\npassme edit\npassme html\n\nFull document at\n{Document}')
+            f'passme {pkg_version} - Password management\n\nUsage:\n'
+            'passme site [master]\n'
+            'passme add\n'
+            'passme list\n'
+            'passme edit\n'
+            'passme html\n\n'
+            f'Full document at\n{Document}'
+        )
         sys.exit()
     else:
         site = sys.argv[1]

@@ -43,7 +43,7 @@ Homepage = "https://github.com/sekika/passme/blob/master/doc/README.rst"
 Source = "https://github.com/sekika/passme"
 
 [build-system]
-requires = ["setuptools>=67.6.1"]
+requires = ["setuptools>=67.6.1", "setuptools_scm[toml]>=6.2"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
@@ -51,3 +51,5 @@ package-dir = {"" = "src"}
 
 [project.scripts]
 passme = "passme.main:main"
+
+[tool.setuptools_scm]
