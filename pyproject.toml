@@ -39,7 +39,7 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/sekika/passme/blob/master/doc/README.rst"
+Homepage = "https://sekika.github.io/passme/"
 Source = "https://github.com/sekika/passme"
 
 [build-system]
