@@ -14,7 +14,7 @@ from .html import genhtml
 def main(argv=sys.argv[1:]):
 
     # Hard-coded configuration
-    Document = 'https://github.com/sekika/passme/blob/master/doc/README.rst'
+    Document = 'https://sekika.github.io/passme/'
     hashes = ('sha384', 'sha512', 'sha3_384', 'sha3_512')
     chars = ('a', 'n', 'an', 'ans', 'ans95')
 

@@ -169,7 +169,7 @@ try {
 </div>
 </form>
 
-<p><a href="https://github.com/sekika/passme">Passme</a></p>
+<p><a href="https://sekika.github.io/passme/">Passme</a></p>
 </body>
 </html>
 '''
