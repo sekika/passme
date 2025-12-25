@@ -5,7 +5,7 @@
 [![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/sekika/passme/blob/master/README.md)
 [![ja](https://img.shields.io/badge/lang-ja-blue.svg)](https://github.com/sekika/passme/blob/master/README-ja.md)
 
-<img alt="Passme illustration" src="https://sekika.github.io/passme/passme.png" style="width: min(100%, 400px);  height: auto; margin:auto; display: block" />
+<img alt="Passme illustration" src="https://sekika.github.io/passme/passme.svg" style="width: min(100%, 600px);  height: auto; margin:auto; display: block" />
 
 暗号化された保管庫（ボールト）にパスワードを保存する代わりに、Passmeは設定ファイルに保存されたサイト固有のシード（**サイトキー**）と、あなただけが知っている**マスターパスワード**を使い、毎回決定論的にパスワードを生成します。
 
@@ -74,7 +74,7 @@ Passmeはパスワードを保存しないため、「パスワードを忘れ�
 
 ## 開発経緯
 
-2017年の[公開](https://pypi.org/project/passme/#history)以来、作者は既存のパスワード管理システムからPassmeに移行し、2025年現在まで安全に利用を続けています。現在、100以上のサイトのパスワードをこのツールで管理しています。関連：[パスワードの管理について](https://sekika.github.io/2017/05/09/Password/)
+2017年の[公開](https://sekika.github.io/2017/05/09/Password/)以来、作者は既存のパスワード管理システムからPassmeに移行し、2025年現在まで安全に利用を続けています。現在、100以上のサイトのパスワードをこのツールで管理しています。
 
 ## ライセンス
 
