@@ -27,7 +27,7 @@ The algorithm for calculating the password is as follows:
 3.  **Convert** the hash digest into a string using the characters specified by `char`.
 4.  **Shorten** the string to the length specified by `len`.
 
-The calculation routine `genpass(seed, hash, char, len)` can be found in `calc.py` (in the source code), and you are encouraged to review the code to verify the algorithm. Note that in the `genpass` function, the first argument is actually the concatenation of the master password and the site-specific seed.
+The calculation routine `genpass(seed, hash, char, len)` can be found in [calc.py](https://github.com/sekika/passme/blob/master/src/passme/calc.py) (in the source code), and you are encouraged to review the code to verify the algorithm. Note that in the `genpass` function, the first argument is actually the concatenation of the master password and the site-specific seed.
 
 ### Reproducibility and Vendor Independence
 
