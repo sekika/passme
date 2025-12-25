@@ -70,7 +70,7 @@ Passmeはパスワードを保存しないため、「パスワードを忘れ�
 
 詳しい使い方、設定オプション、モバイルでの利用（Javascript版）、セキュリティの詳細については、以下のドキュメントを参照してください。
 
-[**https://sekika.github.io/passme/**](https://sekika.github.io/passme/)
+[**https://sekika.github.io/passme/**](https://sekika.github.io/passme/) ([日本語翻訳](https://sekika-github-io.translate.goog/passme/?_x_tr_sl=en&_x_tr_tl=ja&_x_tr_hl=ja))
 
 ## 開発経緯
 
