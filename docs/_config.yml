@@ -1,0 +1,44 @@
+title: passme
+description: Password management with command line.
+author:
+  name: Katsutoshi Seki
+remote_theme: jekyll/minima
+markdown: kramdown
+permalink: pretty
+google_analytics: G-1JRPK4WZ2B
+minima:
+  nav_pages:
+    - index.md
+    - sitekey.md
+    - install.md
+    - add.md
+    - genpass.md
+    - edit.md
+    - change.md
+    - javascript.md
+    - config.md
+    - multiaccount.md
+    - security.md
+  social_links:
+    - title: passme source repository at GitHub
+      icon: github
+      url: "https://github.com/sekika/passme"
+    - title: seki at PyPI
+      icon: python
+      url: "https://pypi.org/user/seki/"
+    - title: sekika at Rust crate
+      icon: rust
+      url: "https://crates.io/users/sekika"
+    - title: seki at X
+      icon: x-twitter
+      url: "https://x.com/seki"
+    - title: Google scholar
+      icon: google-scholar
+      url: "https://scholar.google.com/citations?user=Gs_ABawAAAAJ"
+    - title: ORCID
+      icon: orcid
+      url: "https://orcid.org/0000-0002-5707-0283"
+    - title: Wikipedia User page
+      icon: wikipedia-w
+      url: "https://en.wikipedia.org/wiki/User:Katsutoshi_Seki"
+  hide_site_feed_link: true
