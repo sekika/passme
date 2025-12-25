@@ -118,6 +118,6 @@ Since its [public release](https://sekika.github.io/2025/12/25/passme/) in 2017,
 
 ### Author
 
-[Katsutoshi Seki](https://github.com/sekika) (関 勝寿) wrote this software and published it under the [MIT license](../LICENSE.txt). The author's email address is available in [this paper](https://dx.doi.org/10.1016/j.geoderma.2015.02.013).
+[Katsutoshi Seki](https://github.com/sekika) (関 勝寿) wrote this software and published it under the [MIT license](https://github.com/sekika/passme/blob/master/LICENSE.txt). The author's email address is available in [this paper](https://doi.org/10.2478/johh-2022-0039).
 
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/sekika/passme)
