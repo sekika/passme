@@ -2,6 +2,8 @@
 
 **Passme** is a password management tool for the command line. It helps you generate strong, unique passwords for many sites without storing the passwords themselves.
 
+<img alt="Passme illustration" src="https://sekika.github.io/passme/passme.png" style="width: min(100%, 400px);  height: auto; margin:auto; display: block" />
+
 Instead of an encrypted vault, Passme generates passwords deterministically every time using a site-specific seed (**sitekey**) stored in a configuration file and a **master password** that only you know.
 
 > **Sitekey + Master password = Password**
