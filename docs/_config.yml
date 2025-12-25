@@ -1,7 +1,7 @@
 title: passme
 description: Password management with command line.
 author:
-  name: Katsutoshi Seki
+  name: Katsutoshi Seki (関 勝寿)
 remote_theme: jekyll/minima
 markdown: kramdown
 permalink: pretty

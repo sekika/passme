@@ -118,4 +118,4 @@ Since its [public release](https://pypi.org/project/passme/#history) in 2017, th
 
 ### Author
 
-[Katsutoshi Seki](https://github.com/sekika) wrote this software and published it under the [MIT license](../LICENSE.txt). The author's email address is available in [this paper](https://dx.doi.org/10.1016/j.geoderma.2015.02.013).
+[Katsutoshi Seki](https://github.com/sekika) (関 勝寿) wrote this software and published it under the [MIT license](../LICENSE.txt). The author's email address is available in [this paper](https://dx.doi.org/10.1016/j.geoderma.2015.02.013).
