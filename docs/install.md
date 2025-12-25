@@ -6,42 +6,28 @@ permalink: /install/
 
 # Install passme
 
-### Install Python 3
-
-Install Python 3.6 or higher using one of the following methods:
-
-*   Download and install from the [Python official page](https://www.python.org/).
-*   If you are using [Ubuntu or Debian on Windows Subsystem for Linux (WSL)](https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux), run: `sudo apt install python3`
-*   If you are using [Homebrew](https://brew.sh/) on macOS, run: `brew install python3`
-
-### Install pip
-
-Run the following command:
+Install [Python 3](https://wiki.python.org/moin/BeginnersGuide/Download) and install the passme package with [pip](https://pip.pypa.io/en/stable/getting-started/) by
 
 ```bash
-> python3 -m ensurepip
+> python -m pip install passme
 ```
 
-This will install `pip` if it is not already installed on your system.
-
-### Install passme
-
-Install the package via pip:
+or to specify Python 3
 
 ```bash
-> pip3 install passme
+> python3 -m pip install passme
 ```
 
 You can check the [latest version on PyPI](https://pypi.python.org/pypi/passme) and your installed version by running:
 
 ```bash
-> pip3 search passme
+> python -m pip show passme
 ```
 
 To upgrade to the latest version:
 
 ```bash
-> pip3 install -U passme
+> python -m pip install --upgrade passme
 ```
 
 ---
