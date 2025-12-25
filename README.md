@@ -81,3 +81,5 @@ Since its [public release](https://pypi.org/project/passme/#history) in 2017, th
 This software is released under the [MIT License](LICENSE.txt).
 
 Author: [Katsutoshi Seki](https://github.com/sekika)
+
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/sekika/passme)
