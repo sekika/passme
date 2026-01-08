@@ -114,7 +114,7 @@ Test completed without error.
 
 ### History
 
-Since its [public release](https://sekika.github.io/2025/12/25/passme/) in 2017, the author has migrated from existing password management systems to Passme and has been using it securely through 2025. Currently, over 100 site passwords are managed using this tool.
+Since its [public release](https://sekika.github.io/2025/12/25/passme/) in 2017, the author has migrated from existing password management systems to Passme and has been using it securely through 2026. Currently, over 100 site passwords are managed using this tool.
 
 ### Author
 
