@@ -8,7 +8,10 @@ permalink: /
 
 **Passme** is a password management tool that works via the command line or a [web browser](passme.html). It helps you generate strong, unique passwords for many sites. 
 
-<img alt="Passme illustration" src="passme.svg" style="width: min(100%, 600px);  height: auto; margin:auto; display: block" />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/brUWiUArgsw?si=introduction" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+- Movies in [日本語版](https://www.youtube.com/watch?v=uBLfi6bI6yM) / [Français](https://youtu.be/ZVErgy5EKfg)
+- Movie created with [slidemovie](https://sekika.github.io/slidemovie/)
 
 Passme generates a password deterministically every time using a site-specific seed (**sitekey**) stored in a configuration file ([sitekey file](sitekey/)) combined with a **master password** that you memorize.
 
