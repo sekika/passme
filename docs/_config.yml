@@ -1,5 +1,5 @@
 title: passme
-description: Password management with command line.
+description: Password generation for desktop and mobile.
 author:
   name: Katsutoshi Seki (関 勝寿)
 remote_theme: jekyll/minima
@@ -15,6 +15,7 @@ minima:
     - genpass.md
     - edit.md
     - change.md
+    - mobile.md
     - javascript.md
     - config.md
     - multiaccount.md

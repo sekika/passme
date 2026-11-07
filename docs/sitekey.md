@@ -31,6 +31,12 @@ Since it is a text file, it can be easily managed with a version control system 
 *   **Backup:** If you lose the sitekey file, you can never recover your passwords. Therefore, version control acts as a crucial backup.
 *   **Privacy:** While the file does not directly store your passwords, it contains half of the "key" (the seed). It is not appropriate to place this file in a publicly available location (like a public GitHub repository).
 
+### Using the sitekey file on iOS
+
+The [iOS app](../mobile/) imports the same sitekey file used by the Python / CLI version. Transfer the file to your phone and select it with **Import sitekey**. Select the sitekey file, rather than the `.passme` settings file or a generated HTML file.
+
+The app stores an independent encrypted copy. Each import replaces all saved sites; changes to the PC file are not synchronized automatically. After adding, editing, or changing a site on your PC, import the updated file again. Keep the authoritative file and its backups on your PC.
+
 ### Configuration location
 
 Please note that general configurations (non-site-specific settings), such as the location/filename of the sitekey file itself, are stored in a separate `.passme` file in your home directory. See [Configuration](../config/) for more details.

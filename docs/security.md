@@ -35,6 +35,18 @@ Passme utilizes standard, open cryptographic hash algorithms (such as SHA-256) a
 
 This ensures that **your access is future-proof**: even if the Passme software itself becomes unsupported or the project disappears in the future, the password generation logic is transparent and documented. You can reproduce your passwords using a simple script or other tools, as long as you possess your sitekey file and master password. You are never locked into this specific software to retrieve your credentials.
 
+### Storage and transfer on mobile devices
+
+All versions use the same sitekey-and-master-password generation principle (the JavaScript version does not support `ans95`). Their storage methods differ:
+
+* **Python / CLI:** The sitekey file is a plain-text file managed by you.
+* **iOS app:** Imported sitekeys are stored in an independent encrypted copy on the device, using AES-256-GCM with a key protected by iOS Keychain. The app does not persist the master password or generated passwords. Normal password generation works offline after import.
+* **JavaScript:** The generated HTML contains the sitekey data for the selected sites. Protect it like the original sitekey file; it is not an encrypted backup.
+
+Transferring a sitekey file through cloud storage leaves a plain-text copy with that provider. Importing it into the iOS app does not encrypt or delete the transfer file. Delete unneeded transfer copies yourself, while keeping the authoritative file and secure backups.
+
+The iOS app clears the master input and generated result when you leave the app, lock the device, or after one minute without interaction. It attempts to clear a copied password after 30 seconds if the clipboard has not changed; background execution and protection against other apps reading the clipboard cannot be guaranteed. See [Mobile](../mobile/) for usage and recovery instructions.
+
 ### Attack Vectors
 
 **Theft of Sitekey File:**

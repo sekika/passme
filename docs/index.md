@@ -4,9 +4,9 @@ title: Passme
 permalink: /
 ---
 
-# Passme: Password management with command line
+# Passme: Password generation for desktop and mobile
 
-**Passme** is a password management tool that works via the command line or a [web browser](passme.html). It helps you generate strong, unique passwords for many sites. 
+**Passme** generates strong, unique passwords for many sites. It is available as a Python command-line tool, a Flutter-based [iOS app](https://apps.apple.com/us/app/password-passme/id6830239169), and a [JavaScript version](javascript/) for web browsers.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/brUWiUArgsw?si=introduction" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -25,7 +25,7 @@ Since the master password is not site-specific, you only need to remember **one*
 *   **Secure:** The master password is never stored on disk.
 *   **Vendor Independent:** Uses open, standard algorithms. Even if Passme software is no longer supported, you can recover your passwords using the known calculation logic (no lock-in).
 
-**Critical Security Warning:** 
+**Critical Security Warning:**
 *   **Do not forget your master password.**
 *   **Do not lose your sitekey file.**
 
@@ -33,9 +33,15 @@ If you lose either of them, you will lose access to all your passwords and canno
 
 Refer to [Security](security/) for more detailed information.
 
-### Install
+### Choose a version
 
-See the [Install](install/) page.
+* **Python / CLI:** Manage sitekeys and generate passwords on your computer. See [Install](install/).
+* **iOS app:** Install from the [App Store](https://apps.apple.com/us/app/password-passme/id6830239169), then import your sitekey file. See [Mobile](mobile/) for instructions and a comparison with the JavaScript version.
+* **JavaScript:** Generate an HTML file with `passme html` for use in a browser. See [JavaScript](javascript/).
+
+### Python / CLI usage
+
+The following instructions describe the Python command-line version. See [Install](install/) to get started.
 
 ### Preparation of sitekey file
 
@@ -55,9 +61,9 @@ You can create a sitekey for a new site using the `passme add` command:
 ```bash
 > passme add
 Site name: google
-Character (an): 
-Password length (14): 
-Comment (no input to finish): 
+Character (an):
+Password length (14):
+Comment (no input to finish):
 ```
 
 Refer to [Passme add command](add/) for more information.
@@ -110,7 +116,8 @@ Test completed without error.
 
 *   [Edit the sitekey file](edit/) with the `passme edit` command.
 *   [Changing the password](change/).
-*   [Javascript version](javascript/) for generating passwords on mobile devices.
+*   [Mobile](mobile/) for the iOS app and mobile usage options.
+*   [JavaScript version](javascript/) for generating an HTML file to use in a browser.
 *   [Configuration](config/) via the `.passme` file.
 *   [Multiple accounts](multiaccount/) on the same site.
 *   [Security](security/).

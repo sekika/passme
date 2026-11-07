@@ -1,6 +1,6 @@
-# Passme: Password management with command line
+# Passme: Password generation for desktop and mobile
 
-**Passme** is a password management tool for the command line. It helps you generate strong, unique passwords for many sites without storing the passwords themselves.
+**Passme** generates strong, unique passwords for many sites without storing the passwords themselves. It is available as a Python command-line tool, a Flutter-based iOS app, and a JavaScript version for web browsers.
 
 [![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/sekika/passme/blob/master/README.md)
 [![ja](https://img.shields.io/badge/lang-ja-blue.svg)](https://github.com/sekika/passme/blob/master/README-ja.md)
@@ -18,18 +18,24 @@ Instead of an encrypted vault, Passme generates passwords deterministically ever
 *   **Stateless:** Passwords are calculated on the fly. If you have your sitekey file and your master password, you can generate your passwords anywhere.
 *   **Secure:** Offline brute-force attacks are difficult because the attacker cannot verify a guessed password without trying it on the actual login page (unless they already know one of your passwords).
 *   **Flexible:** You can customize the length, character set (alphanumeric, symbols, etc.), and hashing algorithm for each site.
-*   **Portable:** Includes a feature to generate a standalone [HTML/Javascript file](https://sekika.github.io/passme/passme.html), allowing you to generate passwords on mobile devices without Python.
+*   **Portable:** Generate passwords on your phone with the [iOS app](https://apps.apple.com/us/app/password-passme/id6830239169) or a generated [HTML/JavaScript file](https://sekika.github.io/passme/javascript/), without installing Python on the phone.
 *   **No Vendor Lock-in:** Uses standard, open algorithms. Even if this software is discontinued, you can recover your passwords using the known calculation logic.
 
-## Installation
+## Available Versions
 
-Passme requires Python 3.
+* **Python / CLI:** Manage sitekeys and generate passwords on your computer. See the installation and quick start below.
+* **iOS app:** Install from the [App Store](https://apps.apple.com/us/app/password-passme/id6830239169) and import your sitekey file. See the [mobile guide](https://sekika.github.io/passme/mobile/).
+* **JavaScript:** Generate an HTML file with `passme html` and use it in a browser, including on mobile devices. See the [JavaScript guide](https://sekika.github.io/passme/javascript/).
+
+## Installation (Python / CLI)
+
+The command-line version requires Python 3.
 
 ```bash
 pip install passme
 ```
 
-## Quick Start
+## Quick Start (Python / CLI)
 
 ### 1. Initialization
 Run `passme` to set up your sitekey file location.
@@ -68,7 +74,7 @@ Since Passme does not store your passwords, there is no "Forgot Password" recove
 
 ## Documentation
 
-For detailed usage, configuration options, mobile usage (Javascript version), and security details, please refer to the documentation:
+For detailed usage, configuration options, mobile usage (iOS app and JavaScript version), and security details, please refer to the documentation:
 
 [**https://sekika.github.io/passme/**](https://sekika.github.io/passme/)
 

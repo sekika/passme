@@ -6,6 +6,8 @@ permalink: /config/
 
 # Configuration
 
+The `.passme` file configures the Python / CLI version only. It is not imported by the iOS app or used as a settings file by the JavaScript version.
+
 You can set various configurations in the `.passme` file located in your home directory.
 
 From version 1.1.0 onwards, if a `.passme` file exists in the **current directory**, the configuration is read from there instead of the home directory.

@@ -4,7 +4,17 @@ title: Install
 permalink: /install/
 ---
 
-# Install passme
+# Install Passme
+
+## iOS app
+
+Install the Flutter-based iOS app from the [App Store](https://apps.apple.com/us/app/password-passme/id6830239169). Python is not required on your phone. See [Mobile](../mobile/) for sitekey import and usage instructions.
+
+## JavaScript version
+
+Use the Python / CLI version to generate an HTML file with `passme html`, then open it in a browser. Python is not required on the device opening the HTML file. See [JavaScript](../javascript/) for details.
+
+## Python / CLI version
 
 Install [Python 3](https://wiki.python.org/moin/BeginnersGuide/Download) and install the passme package with [pip](https://pip.pypa.io/en/stable/getting-started/) by
 

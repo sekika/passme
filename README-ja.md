@@ -1,6 +1,6 @@
-# Passme: コマンドラインのパスワード管理ツール
+# Passme: PC とモバイルで使えるパスワード生成ツール
 
-**Passme**はコマンドラインで利用するパスワード管理ツールです。パスワードそのものを保存することなく、多くのサイトで利用できる強力でユニークなパスワードを生成します。
+**Passme**は、パスワードそのものを保存することなく、多くのサイトで利用できる強力でユニークなパスワードを生成するツールです。Python 製のコマンドライン版、Flutter 製の iOS アプリ、ブラウザーで利用できる JavaScript 版があります。
 
 [![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/sekika/passme/blob/master/README.md)
 [![ja](https://img.shields.io/badge/lang-ja-blue.svg)](https://github.com/sekika/passme/blob/master/README-ja.md)
@@ -18,18 +18,24 @@
 *   **ステートレス:** パスワードはその場で計算されます。サイトキーファイルとマスターパスワードさえあれば、どこでもパスワードを生成できます。
 *   **セキュア:** オフラインでの総当たり攻撃（ブルートフォースアタック）が困難です。攻撃者は、推測したパスワードが正しいかどうかを実際のログインページで試さない限り検証できません（あなたのパスワードを一つでも知らない限り）。
 *   **柔軟:** サイトごとに長さ、文字セット（英数字、記号など）、ハッシュ化アルゴリズムをカスタマイズできます。
-*   **ポータブル:** スタンドアロンで動作する[HTML/Javascriptファイル](https://sekika.github.io/passme/passme.html)を生成する機能があり、Pythonがないモバイル端末でもパスワードを生成できます。
+*   **ポータブル:** [iOS アプリ](https://apps.apple.com/us/app/password-passme/id6830239169)や、生成した [HTML/JavaScript ファイル](https://sekika.github.io/passme/javascript/)を使い、スマートフォンに Python をインストールせずにパスワードを生成できます。
 *   **ベンダーロックインなし:** 標準的でオープンなアルゴリズムを使用しています。このソフトウェアの開発が終了しても、既知の計算ロジックを使ってパスワードを復元できます。
 
-## インストール
+## 利用できるバージョン
 
-Passmeの実行にはPython 3が必要です。
+* **Python / CLI 版:** PC でサイトキーを管理し、パスワードを生成します。導入と操作方法は以下を参照してください。
+* **iOS アプリ:** [App Store](https://apps.apple.com/us/app/password-passme/id6830239169) からインストールし、サイトキーファイルを取り込みます。[モバイル利用案内](https://sekika.github.io/passme/mobile/)を参照してください。
+* **JavaScript 版:** `passme html` で HTML ファイルを生成し、モバイル端末を含むブラウザーで利用します。[JavaScript 版の利用案内](https://sekika.github.io/passme/javascript/)を参照してください。
+
+## インストール（Python / CLI 版）
+
+コマンドライン版の実行には Python 3 が必要です。
 
 ```bash
 pip install passme
 ```
 
-## クイックスタート
+## クイックスタート（Python / CLI 版）
 
 ### 1. 初期設定
 `passme`を実行し、サイトキーファイルの保存場所を設定します。
@@ -68,7 +74,7 @@ Passmeはパスワードを保存しないため、「パスワードを忘れ�
 
 ## ドキュメント
 
-詳しい使い方、設定オプション、モバイルでの利用（Javascript版）、セキュリティの詳細については、以下のドキュメントを参照してください。
+詳しい使い方、設定オプション、モバイルでの利用（iOS アプリと JavaScript 版）、セキュリティの詳細については、以下のドキュメントを参照してください。
 
 [**https://sekika.github.io/passme/**](https://sekika.github.io/passme/) ([日本語翻訳](https://sekika-github-io.translate.goog/passme/?_x_tr_sl=en&_x_tr_tl=ja&_x_tr_hl=ja))
 

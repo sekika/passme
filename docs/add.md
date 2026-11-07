@@ -33,7 +33,7 @@ Here is a list of character types that can be selected:
 | ans | Alphabet, numeric, and symbols (`+/#[$-=?@]_!`) |
 | ans95 | All 95 available ASCII characters |
 
-**Note:** `ans95` is not available in the [Javascript version](../javascript/).
+**Note:** `ans95` is not available in the [JavaScript version](../javascript/).
 
 You can also add site-specific information as comments, such as your user ID, the URL of the login page, or any other notes. UTF-8 characters can be used in the comments. You can input multiple comment lines; press Enter on an empty line to finish.
 
