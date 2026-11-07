@@ -87,5 +87,3 @@ Since its [public release](https://sekika.github.io/2025/12/25/passme/) in 2017,
 This software is released under the [MIT License](LICENSE.txt).
 
 Author: [Katsutoshi Seki](https://github.com/sekika)
-
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/sekika/passme)

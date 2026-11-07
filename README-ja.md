@@ -87,5 +87,3 @@ Passmeはパスワードを保存しないため、「パスワードを忘れ�
 このソフトウェアは[MITライセンス](LICENSE.txt)のもとで公開されています。
 
 作者: [Katsutoshi Seki](https://github.com/sekika)
-
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/sekika/passme)
